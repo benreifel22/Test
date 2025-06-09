@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "date": "2024-01-01",
+      "source": "example",
+      "title": "Dummy headline",
+      "link": "https://example.com"
+    }
+  ],
+  "counts": [
+    {"weekLabel": "2024-W01", "count": 1},
+    {"weekLabel": "2024-W02", "count": 0}
+  ]
+}

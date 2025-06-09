@@ -1,14 +1,7 @@
-body {
-  background-color: #121212;
-  color: #fff;
-  font-family: system-ui, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-h1 {
-  cursor: pointer;
-}
+body{margin:0;background:#111;color:#e8e8e8;font-family:system-ui,sans-serif;}
+main{max-width:1000px;margin:40px auto;padding:0 16px;text-align:center;}
+canvas{width:100%!important;height:400px!important;margin-top:20px;}
+ul{list-style:none;padding:0;margin-top:20px;text-align:left;}
+li{margin-bottom:8px;}
+a{color:#39a0ff;}
+.hidden{display:none;}

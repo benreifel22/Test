@@ -1,0 +1,14 @@
+{
+  "name": "hello-web",
+  "version": "1.0.0",
+  "description": "Hello Web project",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "jest": "^29.6.1",
+    "jsdom": "^22.1.0"
+  }
+}

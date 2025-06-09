@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Web</title>
+  <title>Tariff Tracker</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="chart.js" type="module"></script>
 </head>
 <body>
-  <h1 id="greeting">Hello, Codex 👋</h1>
-  <script src="script.js"></script>
+  <h1>Tariff Tracker</h1>
+  <canvas id="chart" width="600" height="300"></canvas>
+  <h2>New Today</h2>
+  <ul id="today"></ul>
 </body>
 </html>

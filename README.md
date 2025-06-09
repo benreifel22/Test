@@ -1,21 +1,34 @@
-# Hello Web
+# Tariff Tracker
 
-A minimal project to demonstrate a simple web page served with Live Server.
+This project monitors trade-related news feeds and publishes a small dashboard.
+It automatically fetches RSS updates and displays weekly activity on a line
+chart.
 
-## Prerequisites
+## Setup
+
 - [Node.js](https://nodejs.org/) 16+
 
-## Setup and run
 ```bash
 npm install
-npm start
 ```
-This starts Live Server on [http://localhost:3000](http://localhost:3000).
 
-## Testing
+To fetch the latest articles locally run:
+
 ```bash
-npm test
+node fetchFeeds.mjs
 ```
 
-## Extending
-Edit `index.html`, `style.css`, or `script.js` to add new features. Tests can be added in `index.test.js`.
+Open `index.html` directly or use any static server to view the dashboard.
+
+## Automation
+
+A GitHub Actions workflow runs every day at 01:00 UTC. It executes
+`npm ci && node fetchFeeds.mjs` and commits the updated `data.json` back to the
+`main` branch using `GITHUB_TOKEN`. This keeps the dashboard data up to date
+without manual intervention.
+
+## GitHub Pages
+
+Enable GitHub Pages in the repository settings with branch **main** and folder
+**/** (root). The dashboard will then be available at
+`https://<username>.github.io/<repo>/`.

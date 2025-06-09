@@ -6,6 +6,12 @@
     "start": "live-server --port=3000",
     "test": "jest"
   },
+  "dependencies": {
+    "node-fetch": "^4",
+    "rss-parser": "^3",
+    "chart.js": "^4",
+    "date-fns": "^3"
+  },
   "devDependencies": {
     "live-server": "^1.2.2",
     "jest": "^29.6.1",

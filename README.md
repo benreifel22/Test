@@ -1,21 +1,14 @@
-# Hello Web
+# Tariff Dashboard
 
-A minimal project to demonstrate a simple web page served with Live Server.
+A self-updating dashboard that tracks tariff-related headlines from the WTO RSS feed. The site is hosted on GitHub Pages and refreshes automatically after the daily update workflow runs.
 
-## Prerequisites
-- [Node.js](https://nodejs.org/) 16+
+View it live at `https://<USER>.github.io/<REPO>/`.
 
-## Setup and run
-```bash
+To add more feeds edit the `FEEDS` array in `fetchFeeds.mjs`.
+
+## Run locally
+```
 npm install
 npm start
 ```
-This starts Live Server on [http://localhost:3000](http://localhost:3000).
-
-## Testing
-```bash
-npm test
-```
-
-## Extending
-Edit `index.html`, `style.css`, or `script.js` to add new features. Tests can be added in `index.test.js`.
+This serves the static site. GitHub Pages updates automatically after the daily workflow commits new `data.json`.
